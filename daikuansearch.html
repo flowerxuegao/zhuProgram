@@ -9,15 +9,22 @@
 	<link rel="stylesheet" href="css/xiaowei.css">
 	<style>
 	.searchBtn{
-		padding: 5px 6px;
 		display: inline-block;
-    	margin-top: 2px;
+    	color:#fff;
+    	width: 20%;
+	    height: 100%;
+	    float: left;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    line-height: 37px;
+	    text-align: center;
 	}
 	.searchResult{
 		width: 100%;
 	}
 	.searchResult tr{
-		border-bottom:1px dotted #ececec;
+		border-bottom:1px dotted #ececec;	
 	}
 	.searchResult td{
 		height: 40px;
@@ -28,14 +35,17 @@
 </head>
 <body>
 	<header>
-		<img src="img/logo.png" alt="张家港农村商业银行" width="250" height="42" style="margin-top: -10px">
+		<img src="img/logo.png" alt="张家港农村商业银行" class = "logoPic">
 	</header>
 	<div style = "font-size: 13pt;color:#333">贷款申请查询</div>
-	<div class="xiaoweimain" style = "background:#eaedf2;border:0">
+	<div class="xiaoweimain">
 		<form action="" id= "daikuansearchForm" method = "get">
-			<label for="" style = "font-size:13pt;width:85px;float:left;">身份证号:</label>
-			<input style = "width:66%;float:left;background:#fff" class = "ipt" type="number" placeholder = "请输入检索条件" id = "sfzNumber" name = "sfzNumber">
-			<a class = "yellow searchBtn">搜索</a>
+			<label for="" style = "font-size:13pt;width:20%;float:left;">身份证号:</label>
+			<div style = "width:80%;height:40px;float:left;border:1px solid #3C8245;box-sizing:border-box;position:relative">
+				<input style = "width:80%;height:100%;float:left;background:#fff;" class = "ipt" type="number" placeholder = "请输入检索条件" id = "sfzNumber" name = "sfzNumber">
+				<a class = "yellow searchBtn" style = "width:20%;height:40px;float:left">搜索</a>
+			</div>
+			
 		</form>
 		<div class="infoList" style = "display:none"></div>
 		<table class="searchResult">
@@ -43,7 +53,7 @@
 		</table>
 		<div class="heart">
 			<div class="content">
-				如有疑问请拨打<a href="tel:0512-96065" style="color: #4F81BD">24小时服务热线：0512-96065</a><br>
+				如有疑问请拨打<a href="tel:0358-2109400" style="color: #4F81BD">24小时服务热线：0358-2109400</a><br>
 			</div>
 		</div>
 	</div>

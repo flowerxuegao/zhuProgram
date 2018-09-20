@@ -24,7 +24,8 @@ function wholeInfo() {
                             console.log(list[i].place_id)
                             var resultStr = "<tr><td>用户姓名：</td><td>"+list[i].user_name+"</td></tr>";
                             console.log(resultStr)
-                            $(".searchResult").html(resultStr)
+                            $(".searchResult").html(resultStr);
+                            $("#sfzNumber").val("")
                         }
                     }
                     // if(searchCondition)

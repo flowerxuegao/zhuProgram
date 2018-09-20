@@ -1,6 +1,6 @@
  $.validator.setDefaults({
  	submitHandler: function() {
-
+ 		// console.log("职业:"+$("#profession").val())
  		// console.log(11);
  		$.ajax({
  			type: "POST",
@@ -21,6 +21,8 @@
  			success: function(data) {
  				alert("提交事件!");
  				console.log("success");
+ 				$("#commentForm").find("input").not(".applySubmit").val('');
+
  			},
  			error: function() {
  				console.log("error");

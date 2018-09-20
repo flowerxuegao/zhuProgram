@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/xiaowei.css">
-	<link rel="stylesheet" media="screen" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.min.css">
 </head>
 <body>
 	<header>
-		<img src="img/logo.png" alt="张家港农村商业银行" width="250" height="42" style="margin-top: -10px">
+		<img src="img/logo.png" alt="张家港农村商业银行" class = "logoPic">
 	</header>
 	<div class="xiaoweimain">
 		<form action="" id = "commentForm" method = "post">
@@ -30,6 +30,7 @@
 						<select class = "sel clear" name="" id="profession">
 							<option value="工薪人士">工薪人士</option>
 							<option value="私营业主">私营业主</option>
+							<option value="农民">农民</option>
 						</select>
 					</div>
 					
@@ -38,9 +39,8 @@
 					<label for="loanUse">贷款用途:</label>
 					<div class = "selBox">
 						<select class = "sel clear" name="" id="loanUse">
-							<option value="经营性贷款">经营性贷款</option>
-							<option value="消费性贷款">消费性贷款</option>
-							<option value="车易贷">车易贷</option>
+							<option value="001">经营性贷款</option>
+							<option value="002">消费性贷款</option>
 						</select>
 					</div>
 					
@@ -49,16 +49,36 @@
 					<label for="bankArea">银行区域:</label>
 					<div class = "selBox">
 						<select class = "sel clear" name="" id="bankArea">
-							<option value="沙洲">沙洲</option>
-							<option value="丹阳">丹阳</option>
-							<option value="南通">南通</option>
+							<option value="01">演  武</option>
+							<option value="02">杏  花</option>
+							<option value="03">宋家庄</option>
+							<option value="04">北  城</option>
+							<option value="05">贾家庄</option>
+							<option value="06">肖家庄</option>
+							<option value="07">张家堡</option>
+							<option value="08">峪道河</option>
+							<option value="09">冀  村</option>
+							<option value="10">见  喜</option>
+							<option value="11">阳  城</option>
+							<option value="12">东  城</option>
+							<option value="13">联社营业部</option>
+							<option value="14">三  泉</option>
+							<option value="15">南偏城</option>
+							<option value="16">城  西</option>
+							<option value="17">石  庄</option>
+							<option value="18">文  峰</option>
+							<option value="19">城  关</option>
+							<option value="20">杨家庄</option>
+							<option value="21">栗家庄</option>
+							<option value="22">南  城</option>
+							<option value="23">城  子</option>
 						</select>
 					</div>
 					
 				</li>
 				<li>
 					<label for="loanMoney">贷款金额:</label>
-					<input class = "ipt" type="text" id = "loanMoney" placeholder = "请输入贷款金额(万)" name = "loanMoney">
+					<input class = "ipt" type="number" id = "loanMoney" placeholder = "请输入贷款金额(万)" name = "loanMoney">
 				</li>
 				<li>
 					<label for="manager">客户经理:</label>
@@ -87,13 +107,13 @@
 		</form>
 		<div class="heart">
 			<div class="content">
-				如有疑问请拨打<a href="tel:0512-96065" style="color: #4F81BD">24小时服务热线：0512-96065</a><br>
+				如有疑问请拨打<a href="tel:0358-2109400" style="color: #4F81BD">24小时服务热线：0358-2109400</a><br>
 			</div>
 		</div>
 	</div>
 	<script src = "js/jquery.js"></script>
 	<script src = "js/jquery.validate.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 
 	<script src="js/messages_zh.js"></script>
 	<script src = "js/xiaowei.js"></script>
