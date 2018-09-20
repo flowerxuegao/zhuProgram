@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/xiaowei.css">
+	<link rel="stylesheet" media="screen" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css">
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="张家港农村商业银行" width="250" height="42" style="margin-top: -10px">
+	</header>
+	<div class="xiaoweimain">
+		<form action="" id = "commentForm" method = "get">
+			<ul>
+				<li>
+					<label for="username">用户姓名:</label>
+					<input class = "ipt" type="text" id = "username" placeholder = "请输入用户姓名" name = "username"  autocomplete="off" required>
+				</li>
+				<li>
+					<label for="zjNumber">证件号码:</label>
+					<input class = "ipt" type="number" id = "zjNumber" placeholder = "请输入证件号码" name = "zjNumber"  autocomplete="off" required>
+				</li>
+				<li>
+					<label for="companyName">单位名称:</label>
+					<input class = "ipt" type="text" id = "companyName" placeholder = "请输入单位名称" name = "companyName" autocomplete="off" required>
+					
+				</li>
+				<li>
+					<label for="loanUse">贷款用途:</label>
+					<div class = "selBox">
+						<select class = "sel clear" name="" id="loanUse">
+							<option value="装修">装修</option>
+							<option value="教育助学">教育助学</option>
+							<option value="旅游和其他">旅游和其他</option>
+						</select>
+					</div>
+					
+				</li>
+				<li>
+					<label for="bankArea">银行区域:</label>
+					<div class = "selBox">
+						<select class = "sel clear" name="" id="bankArea">
+							<option value="沙洲">沙洲</option>
+							<option value="丹阳">丹阳</option>
+							<option value="南通">南通</option>
+						</select>
+					</div>
+					
+				</li>
+				<li>
+					<label for="loanMoney">贷款金额:</label>
+					<input class = "ipt" type="number" id = "loanMoney" placeholder = "请输入贷款金额(万)" autocomplete="off">
+				</li>
+				<li>
+					<label for="manager">客户经理:</label>
+					<input class = "ipt" type="text" id = "manager" placeholder = "请输入客户经理" autocomplete="off">
+				</li>
+				<li>
+					<label for="telphone">手机号码:</label>
+					<input class = "ipt" type="number" id = "telphone" placeholder = "请输入手机号" name = "telphone" autocomplete="off" required>
+				</li>
+				<li>
+					<label for="verificationCode">验证码:</label>
+					<input class = "ipt" type="number" id = "verificationCode" placeholder = "请输入验证码" autocomplete="off">
+				</li>
+				<li class = "delBottomLine"></li>
+				<li class = "delBottomLine">
+					<!-- <a class = "applyBtn yellow">预约申请</a> -->
+					<div class = "applyBtn yellow">
+						<input class="applySubmit yellow" type="submit" value="预约申请">
+					</div>
+					
+				</li>
+				<li></li>
+
+			</ul>
+
+		</form>
+		<div class="heart">
+			<div class="content">
+				如有疑问请拨打<a href="tel:0512-96065" style="color: #4F81BD">24小时服务热线：0512-96065</a><br>
+			</div>
+		</div>
+	</div>
+	<script src = "js/jquery.js"></script>
+	<script src = "js/jquery.validate.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+	<script src="js/messages_zh.js"></script>
+	<script src = "js/xiaowei.js"></script>
+</body>
+</html>

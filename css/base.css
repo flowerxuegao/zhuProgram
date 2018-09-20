@@ -1,0 +1,137 @@
+body,
+div,
+section,
+article,
+header,
+nav,
+footer,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+img,
+form,
+fieldset,
+legend,
+input,
+textarea,
+blockquote,
+th,
+td,
+menu,
+figure,
+dir {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width:100%;
+    overflow:hidden;
+    display: block;
+    font-size: 14px;
+    font: 14px \5fae\8f6f\96c5\9ed1, \5b8b\4f53, Arial, Verdana;
+    background: #eaedf2;
+}
+
+div {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+html {
+    display: block;
+}
+header{
+    width: 100%;
+    height: 68px;
+    line-height: 68px;
+    overflow: hidden;
+    border-bottom: 3px solid #EDB613;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #EAEDF2;
+}
+header img {
+    vertical-align: middle;
+}
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+.ipt {
+    width: 100%;
+    height: 38px;
+    padding: 7px 0 7px 5px;
+    -webkit-appearance: none;
+    background: transparent;
+    box-sizing:border-box;
+}
+.clear {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.xiaoweimain .delBottomLine{
+    border-bottom:0;
+}
+.yellow {
+    background: #feb300;
+}
+.heart {
+    border: 1px solid #e1e1e1;
+    width: 100%;
+    margin: 20px 0;
+    float: left;
+    text-align: left;
+    background: url(../img/heart.png) no-repeat #f7f8fa;
+    font-size: 12px;
+    padding-top: 25px;
+    background-size: 61px 18px;
+    line-height: 22px;
+    color: #4F81BD;
+    font-weight: bold;
+}
+.heart .content {
+    padding: 0px 10px 10px 10px;
+}
+a, button, input {
+    font-size: 1em;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    cursor: pointer;
+    border: 0;
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>贷款预约申请</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/xiaowei.css">
+	<link rel="stylesheet" media="screen" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css">
+
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="张家港农村商业银行" width="250" height="42" style="margin-top: -10px">
+	</header>
+	<div class="xiaoweimain">
+		<form action="" id = "commentForm" method = "get">
+			<ul>
+				<li>
+					<label for="username">用户姓名:</label>
+					<input class = "ipt" type="text" id = "username" placeholder = "请输入用户姓名" name = "username" required autocomplete="off">
+				</li>
+				<li>
+					<label for="zjNumber">证件号码:</label>
+					<input class = "ipt" type="number" id = "zjNumber" placeholder = "请输入证件号码" name = "zjNumber" required autocomplete="off">
+				</li>
+				<li>
+					<label for="houseName">小区名称:</label>
+					<input class = "ipt" type="text" id = "houseName" placeholder = "请输入小区名称" name = "houseName" autocomplete="off">
+					
+				</li>
+				<li class = "shengshiqu">
+					<div id="distpicker5">
+						<div>
+							<select class = "sel clear" name="" id="shengSel"></select>
+							
+						</div>
+						<div>
+							<select class = "sel clear" name="" id="shiSel"></select>
+							
+						</div>
+						<div>
+							<select class = "sel clear" name="" id="quSel"></select>
+							
+						</div>
+					
+					</div>
+					
+				</li>
+				<li>
+					<label for="specificAddress">详细地址:</label>
+					<input class = "ipt" type="text" id = "specificAddress" placeholder = "请输入详细地址" name = "specificAddress" autocomplete="off">
+				</li>
+				<li>
+					<label for="loanUse">贷款用途:</label>
+					<div class = "selBox">
+						<select class = "sel clear" name="" id="loanUse">
+							<option value="经营性贷款">经营性贷款</option>
+							<option value="消费性贷款">消费性贷款</option>
+						</select>
+					</div>
+					
+				</li>
+				<li>
+					<label for="bankArea">银行区域:</label>
+					<div class = "selBox">
+						<select class = "sel clear" name="" id="bankArea">
+							<option value="沙洲">沙洲</option>
+							<option value="丹阳">丹阳</option>
+							<option value="南通">南通</option>
+						</select>
+					</div>
+					
+				</li>
+				<li>
+					<label for="loanMoney">贷款金额:</label>
+					<input class = "ipt" type="number" id = "loanMoney" placeholder = "请输入贷款金额(万)" name = "loanMoney" autocomplete="off">
+				</li>
+				<li>
+					<label for="manager">客户经理:</label>
+					<input class = "ipt" type="text" id = "manager" placeholder = "请输入客户经理" name = "manager" autocomplete="off">
+				</li>
+				<li>
+					<label for="telphone">手机号码:</label>
+					<input class = "ipt" type="number" id = "telphone" placeholder = "请输入手机号" name = "telphone" required autocomplete="off">
+				</li>
+				<li>
+					<label for="verificationCode">验证码:</label>
+					<input class = "ipt" type="number" id = "verificationCode" placeholder = "请输入验证码" name = "verificationCode" autocomplete="off">
+				</li>
+				<li class = "delBottomLine"></li>
+				<li class = "delBottomLine">
+					<!-- <a class = "applyBtn yellow">预约申请</a> -->
+					<div class = "applyBtn yellow">
+						<input class="applySubmit yellow" type="submit" value="预约申请">
+					</div>
+					
+				</li>
+				<li></li>
+
+			</ul>
+
+		</form>
+		<div class="heart">
+			<div class="content">
+				如有疑问请拨打<a href="tel:0512-96065" style="color: #4F81BD">24小时服务热线：0512-96065</a><br>
+			</div>
+		</div>
+	</div>
+	<script src = "js/jquery.js"></script>
+	<script src = "js/jquery.validate.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+	<script src="js/messages_zh.js"></script>
+	<script src = "js/fangyi.js"></script>
+	<script src="js/distpicker.data.js"></script>
+  	<script src="js/distpicker.js"></script>
+  	<script src="js/main.js"></script>
+</body>
+</html>
